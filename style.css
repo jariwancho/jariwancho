@@ -94,3 +94,19 @@ img {
     border-radius: 4px;
     background-color: #f9f9f9;
 }
+
+/* Apply Work Sans to body text */
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply DM Serif Display to headers */
+#main-title,
+h2 {
+    font-family: 'DM Serif Display', serif;
+    color: #c70101;
+}
