@@ -1,86 +1,232 @@
-/* Element selector: */
+/* Override default styling for body background and fonts */
 body {
-  background-color: #f3f3f3;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #222;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #dc143c, #8b0000);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
-h1, h2 {
-  text-align: center;
-  color: #d00027;
+/* Container with flexbox */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
-/* Class selector */
-.intro {
-  text-align: center;
-  font-size: 1.1em;
-  margin-bottom: 20px;
+/* Header styling */
+.header {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: 3px solid #ffd700;
 }
 
-.image-section {
-  text-align: center;
-  margin: 20px 0;
+/* H1 element styling */
+h1 {
+    font-size: 2.8em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    color: #ffd700;
 }
 
-.team-logo {
-  width: 150px;
-  border: 3px solid #d00027;
-  padding: 10px;
-  border-radius: 10px;
+/* H2 element styling */
+h2 {
+    font-size: 2em;
+    color: #ffd700;
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 10px;
+    margin-top: 30px;
 }
 
-/* ID selector */
-#main-title {
-  background-color: #fff;
-  padding: 20px;
-  border-bottom: 2px solid #ccc;
+/* H3 element styling */
+h3 {
+    color: #ffd700;
+    margin-top: 20px;
 }
 
-/* Flexbox usage */
-.flex-links {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
+/* Section styling with class selector */
+.section {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.flex-links a {
-  padding: 10px 15px;
-  background-color: #d00027;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
+/* Paragraph styling */
+p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
 }
 
-.flex-links a:hover {
-  background-color: #a8001f;
-}
-
-/* Table styling using box model */
+/* Table styling */
 table {
-  margin: 20px auto;
-  border-collapse: collapse;
-  width: 80%;
-  background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 th, td {
-  border: 1px solid #ccc;
-  padding: 12px;
-  text-align: center;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 th {
-  background-color: #d00027;
-  color: white;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffd700;
+    font-weight: bold;
 }
 
+/* Lists styling */
+ul, ol {
+    padding-left: 20px;
+    margin: 15px 0;
+}
+
+li {
+    margin-bottom: 8px;
+    font-size: 1.05em;
+}
+
+/* Links styling */
+a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffff99;
+    text-decoration: underline;
+}
+
+/* ID selector for highlight box */
+#highlight-stats {
+    background: linear-gradient(45deg, #ff6b6b, #dc143c);
+    border: 2px solid #ffd700;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Image styling */
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.team-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #ffd700;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Flexbox for stats layout */
+.stats-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.stat-card {
+    flex: 1;
+    min-width: 200px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #ffd700;
+}
+
+.stat-number {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffd700;
+    display: block;
+}
+
+/* Box model demonstration */
+.box-model-demo {
+    margin: 20px;
+    padding: 15px;
+    border: 3px solid #ffd700;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+/* Navigation styling */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 2px solid #ffd700;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background: #ffd700;
+    color: #dc143c;
+}
+
+/* Footer styling */
 footer {
-  text-align: center;
-  margin-top: 40px;
-  padding: 20px;
-  background-color: #111;
-  color: #fff;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 2.2em;
+    }
+    
+    .stats-grid {
+        flex-direction: column;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .stat-card {
+        min-width: 100%;
+    }
+    
+    table {
+        font-size: 0.9em;
+    }
+    
+    th, td {
+        padding: 8px;
+    }
 }
